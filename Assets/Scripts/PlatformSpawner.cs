@@ -7,8 +7,9 @@ public class PlatformSpawner : MonoBehaviour
     [SerializeField] private Transform _playerTransform;
     [SerializeField] private Camera _mainCamera;
 
-    private float _spawnOffset = 9.0f;
-    private float _despawnOffset = 10.0f;
+    [SerializeField] private float _spawnOffset = 5.0f;
+    [SerializeField] private float _despawnOffset = 10.0f;
+
     private List<GameObject> _spawnedPlatforms = new List<GameObject>();
 
     private void Awake()

@@ -11,7 +11,7 @@ public class PlatformMovement : MonoBehaviour
 
     private void Move()
     {
-        Vector3 movement = new Vector3(0.0f, 0.0f, 1.0f) * platformSpeed * Time.deltaTime;
+        Vector3 movement = platformSpeed * Time.deltaTime * new Vector3(0.0f, 0.0f, 1.0f);
         transform.position -= movement;
     }
 }

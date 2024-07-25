@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _jumpForce = 10.0f;
 
     private Rigidbody _rigidbody;
-    public Animator animator;
+    [HideInInspector] public Animator animator;
     private bool _isGrounded;
 
     private void Start()

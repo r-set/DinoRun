@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 3030096564490440464}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -43,31 +43,21 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f1894a67d6912fd45b58e881e53b5af0,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1894a67d6912fd45b58e881e53b5af0,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1894a67d6912fd45b58e881e53b5af0,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: f1894a67d6912fd45b58e881e53b5af0,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1894a67d6912fd45b58e881e53b5af0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: f1894a67d6912fd45b58e881e53b5af0,
-        type: 3}
-      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1894a67d6912fd45b58e881e53b5af0,
@@ -109,7 +99,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2aab8f8bf280bd84c9417650edef9d2f, type: 2}
+      objectReference: {fileID: 2100000, guid: 9b43fc63038a47f468201fefb4d8e7c2, type: 2}
     - target: {fileID: 919132149155446097, guid: f1894a67d6912fd45b58e881e53b5af0,
         type: 3}
       propertyPath: m_Name
@@ -154,8 +144,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.6707911, y: 2.898535, z: 1.8654361}
-  m_Center: {x: 0.056555748, y: 0.19230552, z: 0.11214593}
+  m_Size: {x: 0.26707911, y: 0.28985348, z: 0.1865436}
+  m_Center: {x: 0.005655572, y: 0.019230548, z: 0.011214591}
 --- !u!4 &614280434928410953 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f1894a67d6912fd45b58e881e53b5af0,

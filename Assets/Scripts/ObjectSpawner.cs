@@ -30,7 +30,7 @@ public class ObjectSpawner : MonoBehaviour
     {
         float nextSpawnZ = Mathf.Floor(_platformTransform.position.z / _spawnDistance) * _spawnDistance;
 
-        Vector3 spawnPosition = new Vector3(GetRandomXPosition(), 0.5f, nextSpawnZ + _spawnDistance);
+        Vector3 spawnPosition = new Vector3(GetRandomXPosition(), 0.45f, nextSpawnZ + _spawnDistance);
         GameObject newBlock = Instantiate(_objectPrefab[Random.Range(0, _objectPrefab.Length)], spawnPosition, Quaternion.identity);
         _spawnedObjects.Add(newBlock);
     }

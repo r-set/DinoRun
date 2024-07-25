@@ -1,10 +1,10 @@
 using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
+using TMPro;
 
 public class CollisionHandler : MonoBehaviour
 {
-    [SerializeField] private Text _distanceText;
+    [SerializeField] private TextMeshProUGUI _distanceText;
     [SerializeField] private PlatformMovement _platformMovement;
     [SerializeField] private PlayerMovement _playerMovement;
     private float _startTime;
