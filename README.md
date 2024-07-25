@@ -5,5 +5,4 @@ A prototype of a mobile runner game.
 
 ## Models
 * Dino by plumbear106
-* Trees by Sergio Sotomayor
 * Rocks by YadroGames
