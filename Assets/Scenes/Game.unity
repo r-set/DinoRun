@@ -829,6 +829,7 @@ MonoBehaviour:
   _platformTransform: {fileID: 1923355344}
   _platformMovement: {fileID: 7835418833243159928, guid: fef5170ee3eeaad4abc38e4166593a1b,
     type: 3}
+  _cameraTransform: {fileID: 963194228}
 --- !u!4 &1108360107
 Transform:
   m_ObjectHideFlags: 0

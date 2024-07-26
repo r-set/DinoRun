@@ -7,7 +7,7 @@ public class ObjectSpawner : MonoBehaviour
     [SerializeField] private Transform _platformTransform;
     [SerializeField] private PlatformMovement _platformMovement;
 
-    private float _spawnDistance = 100.0f;
+    private float _spawnDistance = 75.0f;
     private float _destroyOffset = 5.0f;
     private float _lastSpawnTime = 0f;
     private float _spawnInterval = 1.0f;
@@ -31,7 +31,7 @@ public class ObjectSpawner : MonoBehaviour
         float nextSpawnZ = Mathf.Floor(_platformTransform.position.z / _spawnDistance) * _spawnDistance;
 
         Vector3 spawnPosition = new Vector3(GetRandomXPosition(), 0.45f, nextSpawnZ + _spawnDistance);
-        GameObject newBlock = Instantiate(_objectPrefab[Random.Range(0, _objectPrefab.Length)], spawnPosition, Quaternion.identity);
+        GameObject newBlock = Instantiate(_objectPrefab[Random.Range(0, _objectPrefab.Length)], spawnPosition, Quaternion.identity, transform);
         _spawnedObjects.Add(newBlock);
     }
 

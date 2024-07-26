@@ -29,9 +29,9 @@ public class PlatformSpawner : MonoBehaviour
 
     private void GetSpawnPlatform()
     {
-        float spawnDistance = _playerTransform.position.z + _mainCamera.farClipPlane;
+        float spawnDistance = _playerTransform.position.z + (_mainCamera.transform.forward.z * _mainCamera.farClipPlane);
 
-        if (spawnDistance > _spawnedPlatforms[_spawnedPlatforms.Count - 1].transform.position.z)
+        if (spawnDistance > _spawnedPlatforms[_spawnedPlatforms.Count - 1].transform.position.z + _spawnOffset)
         {
             SpawnPlatform();
         }
@@ -50,9 +50,9 @@ public class PlatformSpawner : MonoBehaviour
     private void SpawnInitialPlatforms()
     {
         Vector3 spawnPosition = transform.position;
-        while (spawnPosition.z < _playerTransform.position.z + _mainCamera.farClipPlane)
+        while (spawnPosition.z < _playerTransform.position.z + (_mainCamera.transform.forward.z * _mainCamera.farClipPlane))
         {
-            GameObject newPlatform = Instantiate(_platformPrefab, spawnPosition, Quaternion.identity);
+            GameObject newPlatform = Instantiate(_platformPrefab, spawnPosition, Quaternion.identity, transform);
             _spawnedPlatforms.Add(newPlatform);
             newPlatform.AddComponent<PlatformMovement>();
             spawnPosition.z += _spawnOffset;
@@ -62,7 +62,7 @@ public class PlatformSpawner : MonoBehaviour
     private void SpawnPlatform()
     {
         Vector3 spawnPosition = _spawnedPlatforms[_spawnedPlatforms.Count - 1].transform.position + Vector3.forward * _spawnOffset;
-        GameObject newPlatform = Instantiate(_platformPrefab, spawnPosition, Quaternion.identity);
+        GameObject newPlatform = Instantiate(_platformPrefab, spawnPosition, Quaternion.identity, transform);
         _spawnedPlatforms.Add(newPlatform);
         newPlatform.AddComponent<PlatformMovement>();
     }
